@@ -53,6 +53,7 @@ dependencies {
             'org.springframework.boot:spring-boot-starter-actuator',
             "com.google.appengine:appengine-api-1.0-sdk:${appengineVersion}",
             'com.google.cloud:google-cloud-pubsub',
+            'com.google.cloud:google-cloud-logging-logback:0.106.0-alpha',
             "org.slf4j:log4j-over-slf4j:${slf4jVersion}", // routes all log4j logging to slf4j
             "org.slf4j:jcl-over-slf4j:${slf4jVersion}",    // routes all commons logging to slf4j
     )

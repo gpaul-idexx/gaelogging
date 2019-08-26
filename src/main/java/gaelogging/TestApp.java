@@ -44,9 +44,7 @@ public class TestApp extends SpringBootServletInitializer {
         subscriber = Subscriber.newBuilder(subscriptionName, (message, consumer) -> {
             try {
                 String mess = message.getData().toString("UTF-8");
-                log.info("We got a message {}", mess);
-                System.out.println("sout message " + mess);
-                System.err.println("serr message " + mess);
+                log.info("Info: We got a message {}", mess);
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             } finally {
